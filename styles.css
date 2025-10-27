@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffaf6;
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 180, 120, 0.15), transparent 40%),
+                    radial-gradient(circle at 80% 70%, rgba(255, 180, 120, 0.15), transparent 40%),
+                    radial-gradient(circle at 50% 50%, rgba(255, 210, 180, 0.1), transparent 30%);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+#header {
+  text-align: center;
+  margin: 2rem 2rem;
+}
+
+#logo {
+  max-width: 220px;
+  transition: all 0.3s ease;
+}
+#logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* MENU */
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(255, 150, 90, 0.2);
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 120, 60, 0.1);
+  transition: all 0.3s ease;
+}
+
+#menu:hover {
+  background-color: #fff5ef;
+  box-shadow: 0 4px 20px rgba(255, 120, 60, 0.2);
+}
+
+#menu > li {
+  padding: 1rem;
+}
+
+#menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ff7b42;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+#menu a:hover {
+  color: #ff4e00;
+  text-shadow: 0 0 10px rgba(255, 120, 60, 0.4);
+}
+
+/* LAYOUT */
+body > * {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff7b42;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(255, 120, 60, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5a00;
+  box-shadow: 0 5px 15px rgba(255, 120, 60, 0.4);
+  transform: translateY(-2px);
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.features article h1 {
+  position: relative;
+  bottom: -2rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #fff3eb;
+  color: #ff7b42;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(255, 150, 90, 0.2);
+}
+
+.features article img {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(255, 150, 90, 0.15);
+  transition: transform 0.4s ease;
+}
+.features article img:hover {
+  transform: scale(1.05);
+}
+
+.features article p {
+  position: relative;
+  top: -2rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #555;
+  box-shadow: 0 3px 10px rgba(255, 150, 90, 0.1);
+}
+
+/* TEXTS */
+.normal {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff5a00;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fffaf6 50%, #fff1e6 100%);
+  box-shadow: 0 4px 15px rgba(255, 150, 90, 0.15);
+  transition: all 0.4s ease;
+}
+.hero:hover {
+  box-shadow: 0 6px 20px rgba(255, 150, 90, 0.25);
+}
+
+@media (min-width:768px) {
+  .hero {
+    flex-direction: row;
+    background: linear-gradient(90deg, #fffaf6 50%, #fff1e6 100%);
+  }
+  .hero .hero_img {
+    max-width: 50%;
+  }
+  .hero .hero_text {
+    padding-left: 2rem;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  border-top: 2px solid #ffe2cc;
+  background-color: #fffaf6;
+  color: #444;
+  text-align: center;
+}
+
+footer img {
+  max-width: 160px;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+@media (min-width:768px) {
+  footer {
+    flex-direction: row;
+  }
+}
